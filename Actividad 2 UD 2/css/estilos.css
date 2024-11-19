@@ -56,11 +56,11 @@ footer {
     color: #000078;
     text-align: center;
     padding: 20px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    position: static;
     width: 100%;
     font-size: 20px;
+    left: 0;
+    right: 0;
 }
 
 footer p {
@@ -110,19 +110,38 @@ a {
     position: absolute;
 }
 
-.h11 {
+.cifras {
+    background-color: #F0F0F0;
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+    width: 100vw; 
+    left: calc(-25%); /* Compensa los márgenes horizontales del body */
+}
+
+.cifras h1 {
     font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.fila-index {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.elemento {
     text-align: center;
 }
 
-.div {
-    background-color: #F0F0F0;
-    width: 100%;
-    position: fixed;
-    left: 0;
+.elemento i {
+    font-size: 60px;
+    color: #000078;
+    margin-bottom: 10px;
 }
 
 .h12 {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
 }
+
