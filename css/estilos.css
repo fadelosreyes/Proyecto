@@ -15,6 +15,9 @@ body {
 
 }
 
+.body2 {
+    background-image: url(../img/avion-blanco\ 1\(1\).png);
+}
 /* Cabezera */
 
 header {
@@ -74,6 +77,7 @@ nav:last-child {
     transform: scale(1.05); 
 }
 
+/*main*/
 .reserva {
     color: white;
     text-align: center;
@@ -98,6 +102,65 @@ nav:last-child {
     padding-top: 26%;
     padding-bottom: 0%;
 }
+/*sobre nosotros*/
+.titulo {
+    padding-top: 19%;
+    color: white;
+} 
+
+.titulo2 {
+    font-size: 60px;
+}
+
+.sobrenosotros {
+    font-size: 150px;
+}
+
+.seccion-acerca-de {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.contenido-acerca-de {
+    width: 70%;
+    padding-left: 10%;
+}
+
+.texto-acerca-de {
+    font-size: 1.3em;
+    line-height: 1.6;
+}
+
+.enlaces-sociales {
+    width: 25%;
+    padding-left: 10%;
+}
+
+.lista-sociales {
+    list-style: none;
+    padding: 0;
+}
+
+.item-social {
+    padding: 5px 0;
+    display: block;
+    align-items: center;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #FF7F50;
+    font-weight: bold;
+}
+
+.item-social img {
+    padding-top: 10px;
+    margin-left: 10px;  
+    width: 20px;  
+    height: auto; 
+}
+
+
 
 
 
