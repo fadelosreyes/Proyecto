@@ -7,8 +7,12 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url(../img/image.png);
     background-repeat: no-repeat;
+}
+
+.body {
+    background-image: url(../img/image.png);
+
 }
 
 /* Cabezera */
