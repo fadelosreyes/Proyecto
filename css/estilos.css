@@ -62,6 +62,7 @@ nav:last-child {
 }
 
 .btn-inicio {
+    display: inline-block; /* Asegura que se comporte como un botón */
     background-color: #FF7F50; 
     color: black; 
     border: none;
@@ -70,11 +71,12 @@ nav:last-child {
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
+    text-align: center; /* Centra el texto dentro de la etiqueta */
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn-inicio:hover {
-    transform: scale(1.05); 
+    transform: scale(1.05); /* Agrega un efecto de ampliación */
 }
 
 /*main*/
@@ -98,12 +100,111 @@ nav:last-child {
     justify-content: center;
     width: 100%;
     gap: 240px;
-    padding: 15%;
-    padding-top: 26%;
-    padding-bottom: 0%;
+    padding: 10% 12% 0%;
 }
+
+/*formulario viajes*/
+#buscadorViajes {
+    background-color: white;
+    padding: 2%;
+    border-radius: 1em;
+    width: 70%;
+    margin: 2em auto;
+}
+
+#inicioSesion {
+    background-color: white;
+    padding: 3%;
+    border-radius: 1em;
+    width: 30%;
+    margin: 0.5em auto;
+    text-align: center;
+}
+
+
+.botones_formularios {
+    float: right; /* Mantiene el botón alineado a la derecha */
+    border-radius: 1em;
+    background-color: #FF7F50;
+    margin-top: 0.5em;
+    margin-bottom: 0.9em;
+    color: #000000;
+    cursor: pointer;
+    border: none;
+    font-size: 0.8em; /* Reduce el tamaño del texto */
+    padding: 0.2em 1em 0.2em ; /* Reduce el espacio interno del botón */
+    width: auto; /* Asegura que el botón no sea demasiado ancho */
+}
+  
+
+select {
+    background-color: white;
+    border-radius: 1em;
+    border: 0.1em solid black;
+    padding: 0.5em;
+    margin: 1.2em;
+    color: black;
+    font-size: 1em;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.input-container {
+    position: relative;
+    flex: 1;
+    
+    max-width: 95%;
+    padding: 0.7em
+}
+
+.input {
+    border: solid 1.5px #9e9e9e;
+    border-radius: 1em;
+    background: none;
+    padding: 1em;
+    font-size: 1em;
+    color: black;
+    transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+}
+
+#textosInicio{
+    margin: 0 auto;
+    font-size: 1em;
+}
+
+.art {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9e9e9e;
+    pointer-events: none;
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: white;
+    padding: 0 0.3em;
+}
+
+/* Mueve el label hacia arriba al enfocar o escribir */
+.input:focus ~ .art,
+.input:valid ~ .art {
+    top: -0.6em;
+    transform: translateY(0) scale(0.8);
+    color: black;
+}
+
+.input:focus {
+    outline: none;
+    border: 1.5px solid black;
+}
+
 /*sobre nosotros*/
-.titulo {
+.titulo {   
     padding-top: 19%;
     color: white;
 } 
@@ -159,8 +260,108 @@ nav:last-child {
     width: 20px;  
     height: auto; 
 }
+/* Menú lateral */
+#btn-menu {
+    display: none;
+}
 
+.container-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
+}
 
+#btn-menu:checked ~ .container-menu {
+    opacity: 1;
+    visibility: visible;
+}
 
+.cont-menu {
+    position: fixed;
+    top: 0;
+    right: 0; /* Cambio de left a right para que aparezca desde la derecha */
+    width: 80%;
+    max-width: 500px;
+    height: 100%;
+    background: white;
+    transform: translateX(100%); /* El menú comienza fuera de la pantalla a la derecha */
+    transition: transform 0.3s ease;
+    text-align: center;
+    padding: ;
+}
+
+#btn-menu:checked ~ .container-menu .cont-menu {
+    transform: translateX(0); /* Cuando se activa, el menú se desliza desde la derecha */
+}
+
+.cont-menu nav {
+    padding: 50px 20px;
+}
+
+.cont-menu nav a {
+    display: block;
+    color: #c7c7c7;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    border-left: 4px solid transparent;
+    transition: color 0.3s ease, border-left-color 0.3s ease, background-color 0.3s ease;
+}
+
+.cont-menu nav a:hover {
+    color: #ffffff;
+    border-left-color: #FF7F50;
+    background-color: #333;
+}
+
+.close-menu {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    color: #FF7F50;
+    cursor: pointer;
+}
+
+.close-menu:hover {
+    color: #FF5733;
+}
+
+.botones_sesion {
+    border-radius: 1em;
+    background-color: #FF7F50;
+    margin-top: 0.5em;
+    margin-bottom: 0.9em;
+    color: #000000;
+    cursor: pointer;
+    border: none;
+    font-size: 0.8em; /* Reduce el tamaño del texto */
+    padding: 0.8em; /* Reduce el espacio interno del botón */
+    width: auto; /* Asegura que el botón no sea demasiado ancho */
+    display: block; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.texto-menu {
+    margin: 0 auto; /* Centra el elemento si tiene un ancho definido */
+    width: 80%; /* Define un ancho específico si es necesario */
+}
+
+.campos {
+    position: relative;
+    flex: 1;
+    max-width: 80%;
+    padding: 0.7em;
+    margin: 0 auto; /* Centra el elemento */
+}
 
 

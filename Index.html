@@ -26,14 +26,75 @@
             <figure>
                 <img src="img/image 1.png" alt="España">
             </figure>
-            <button class="btn-inicio">Iniciar sesión</button>
+            <label for="btn-menu" class="btn-inicio">Menú</label>
         </nav>
     </header>
+    <input type="checkbox" id="btn-menu" />
+    <div class="container-menu">
+        <div class="cont-menu">
+            <label for="btn-menu" class="close-btn">✖️</label> <!-- X separada -->
+            <!-- Formulario de inicio de sesión dentro del menú lateral -->
+            <form id="">
+                <label class="texto-menu">Aquí el modo viaje nunca acaba. Te damos mil motivos para seguir eligiendo destinos.</label>
+                <div class="campos">
+                    <input required type="email" id="email" autocomplete="off" class="input">
+                    <label for="email" class="art">Email</label>
+                </div>
+                <div class="campos">
+                    <input required type="password" id="password" autocomplete="off" class="input">
+                    <label for="password" class="art">Contraseña</label>
+                </div>
+                <a href="#" class="texto-menu">¿Has olvidado tu contraseña?</a><br>
+                <button type="submit" name="Iniciar Sesion" class="botones_sesion">Iniciar sesión</button><br><br>
+                <label id="textosInicio" class="texto-menu">¿Aún no te unes? Hazlo ahora</label><br>
+                <a href="#" class="texto-menu">Crea tu cuenta</a><br>
+            </form>
+        </div>
+    </div>
     <main>
         <br>
         <div>
             <h3 class="reserva">Reserva tu viaje</h3>
         </div>
+            <form id="buscadorViajes">
+                <!-- Selección de tipo de viaje -->
+                <select>
+                    <option>Ida y Vuelta</option>
+                    <option>Solo Ida</option>
+                </select>
+                <label>Pasajeros</label>
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+                <br>
+            
+                <!-- Campos de entrada -->
+                <div class="input-group">
+                    <div class="input-container">
+                        <input required type="text" id="origen" autocomplete="off" class="input">
+                        <label for="origen" class="art">Origen</label>
+                    </div>
+                    <div class="input-container">
+                        <input required type="text" id="destino" autocomplete="off" class="input">
+                        <label for="destino" class="art">Destino</label>
+                    </div>
+                    <div class="input-container">
+                        <input required type="date" id="salida" class="input">
+                        <label for="salida" class="art">F. Salida</label>
+                    </div>
+                    <div class="input-container">
+                        <input required type="date" id="vuelta" class="input">
+                        <label for="vuelta" class="art">F. Vuelta</label>
+                    </div>
+                    <button type="submit" name="Buscar" class="botones_formularios">Buscar</button>
+                </div>
+            
+                <!-- Botón de búsqueda -->
+            
+            </form>
         <section class="cifras">
             <div class="fila-index">
                 <div class="elemento">
