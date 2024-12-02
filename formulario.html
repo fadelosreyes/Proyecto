@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estiloFormularios.css">
+</head>
+<body>
+    <form id="buscadorViajes">
+        <!-- Selección de tipo de viaje -->
+        <select>
+            <option>Ida y Vuelta</option>
+            <option>Solo Ida</option>
+        </select>
+        <label>Pasajeros</label>
+        <select>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+        <br>
+        
+        <!-- Campos de entrada -->
+        <div class="input-group">
+            <div class="input-container">
+                <input required type="text" id="origen" autocomplete="off" class="input">
+                <label for="origen" class="art">Origen</label>
+            </div>
+            <div class="input-container">
+                <input required type="text" id="destino" autocomplete="off" class="input">
+                <label for="destino" class="art">Destino</label>
+            </div>
+            <div class="input-container">
+                <input required type="date" id="salida" class="input">
+                <label for="salida" class="art">F. Salida</label>
+            </div>
+            <div class="input-container">
+                <input required type="date" id="vuelta" class="input">
+                <label for="vuelta" class="art">F. Vuelta</label>
+            </div>
+        </div>
+        
+        <!-- Botón de búsqueda -->
+        <button type="submit" name="Buscar" class="botones_formularios">Buscar</button>
+    </form>
+</body>
+</html>
+</html>
