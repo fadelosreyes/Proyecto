@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body class="body">
+    
+    <header>
+        <figure>
+            <a href="Index.html"><img src="img/_12534FEB-C593-4152-9369-72787BB3F5C6_-removebg-preview 2.png" alt="avion"></a>
+        </figure>
+        <nav>
+            <ul class="cabezeraIzquierda">
+                <li><a href="Index.html" class="active">Inicio</a></li>
+                <li><a href="#">Viajes</a></li>
+                <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <figure>
+                <img src="img/image 1.png" alt="España" >
+            </figure>
+            <label for="btn-menu" class="btn-inicio">Iniciar sesion</label>
+        </nav>
+    </header>
+    <input type="checkbox" id="btn-menu" />
+    <div class="container-menu">
+        <div class="cont-menu">
+            <label for="btn-menu" class="close-btn">✖️</label><br><!-- X separada -->
+            <!-- Formulario de inicio de sesión dentro del menú lateral -->
+            <form id="menuInicioSesion">
+                <label class="texto-menu">Aquí el modo viaje nunca acaba. Te damos mil motivos para seguir eligiendo destinos.</label>
+                <div class="campos">
+                    <input required type="email" id="email" autocomplete="off" class="input">
+                    <label for="email" class="art_inicio">Email</label>
+                </div>
+                <div class="campos">
+                    <input required type="password" id="password" autocomplete="off" class="input">
+                    <label for="password" class="art_inicio">Contraseña</label>
+                </div>
+                <a href="#" class="texto-menu">¿Has olvidado tu contraseña?</a><br><br>
+                <button type="submit" name="Iniciar Sesion" class="botones_masinformacion">Iniciar sesión</button><br><br>
+                <label id="textosInicio" class="texto-menu">¿Aún no te unes? Hazlo ahora</label><br>
+                <a href="#" class="texto-menu">Crea tu cuenta</a><br>
+            </form>
+        </div>
+    </div>
+    <main>
+        <br>
+        <div>
+            <h3 class="reserva">Reserva tu viaje</h3>
+        </div>
+            <form id="buscadorViajes" action="Viajes.html">
+                <!-- Selección de tipo de viaje -->
+                <select>
+                    <option>Ida y Vuelta</option>
+                    <option>Solo Ida</option>
+                </select>
+                <label>Pasajeros</label>
+                <select>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+                <br>
+            
+                <!-- Campos de entrada -->
+                <div class="input-group">
+                    <div class="input-container">
+                        <input required type="text" id="origen" autocomplete="off" class="input">
+                        <label for="origen" class="art">Origen</label>
+                    </div>
+                    <div class="input-container">
+                        <input required type="text" id="destino" autocomplete="off" class="input">
+                        <label for="destino" class="art">Destino</label>
+                    </div>
+                    <div class="input-container">
+                        <input required type="date" id="salida" class="input" placeholder="a">
+                        <label for="salida" class="art">F. Salida</label>
+                    </div>
+                    <div class="input-container">
+                        <input required type="date" id="vuelta" class="input">
+                        <label for="vuelta" class="art">F. Vuelta</label>
+                    </div>
+                    <button type="submit" name="Buscar" class="botones_formularios">Buscar</button>
+                </div>
+            
+                <!-- Botón de búsqueda -->
+            
+            </form>
+        <section class="cifras">
+            <div class="fila-index">
+                <div class="elemento">
+                    <figure>
+                        <img src="img/reembolso 1.png" alt="">
+                    </figure>
+                    <br>
+                    <p>Reembolsos y cancelaciones</p>
+                    <br>
+                    <p class="">Consulta nuestras politicas sobre reembolsos y cancelaciones y realiza cambios al instante</p>
+                    <br>
+                    <button type="submit" class="botones_masinformacion">Más información</button>
+                </div>
+                <div class="elemento">
+                    <figure>
+                        <img src="img/pngwing.com (1) 1.png" alt="">
+                    </figure>
+                    <br>
+                    <p>Gestion de reservas</p>
+                    <br>
+                    <p class="h12">La forma más rapida y sencilla de gestionar un vuelo o solicitar un reembolso es hacerlo a través de Gestionar mi reserva.</p>
+                    <br>
+                    <button type="submit" class="botones_masinformacion">Más información</button>
+                </div>
+                <div class="elemento">
+                    <figure>
+                        <img src="img/pngegg (3) 1.png" alt="">
+                    </figure>
+                    <br>
+                    <p>Otros servicios</p>
+                    <br>
+                    <p class="h12">Explora opciones de hoteles, coches, trenes y más y gestiona todos tus servicios de viaje en un solo lugar</p>
+                    <br>
+                    <button type="submit" class="botones_masinformacion">Más información</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
