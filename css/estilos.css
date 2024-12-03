@@ -109,7 +109,7 @@ nav:last-child {
     padding: 2%;
     border-radius: 1em;
     width: 70%;
-    margin: 2em auto;
+    margin: 1em auto;
 }
 
 #inicioSesion {
@@ -123,7 +123,7 @@ nav:last-child {
 
 
 .botones_formularios {
-    float: right; /* Mantiene el botón alineado a la derecha */
+    float: center;
     border-radius: 1em;
     background-color: #FF7F50;
     margin-top: 0.5em;
@@ -132,10 +132,22 @@ nav:last-child {
     cursor: pointer;
     border: none;
     font-size: 0.8em; /* Reduce el tamaño del texto */
-    padding: 0.2em 1em 0.2em ; /* Reduce el espacio interno del botón */
-    width: auto; /* Asegura que el botón no sea demasiado ancho */
+    padding: 1.2em ; /* Reduce el espacio interno del botón */
+    width: 8%; /* Asegura que el botón no sea demasiado ancho */
 }
   
+.botones_masinformacion{
+    float: center; 
+    background-color: #FF7F50;
+    margin-top: 0.5em;
+    margin-bottom: 0.9em;
+    color: #000000;
+    cursor: pointer;
+    border: none;
+    font-size: 0.8em; /* Reduce el tamaño del texto */
+    padding: 1em ; /* Reduce el espacio interno del botón */
+    width: auto; /* Asegura que el botón no sea demasiado ancho */
+}
 
 select {
     background-color: white;
@@ -157,8 +169,7 @@ select {
 .input-container {
     position: relative;
     flex: 1;
-    
-    max-width: 95%;
+    max-width: 100%;
     padding: 0.7em
 }
 
@@ -170,13 +181,14 @@ select {
     font-size: 1em;
     color: black;
     transition: border 150ms cubic-bezier(0.4, 0, 0.2, 1);
-    width: 100%;
+    width: 95%;
 }
 
 #textosInicio{
     margin: 0 auto;
     font-size: 1em;
 }
+
 
 .art {
     position: absolute;
@@ -188,7 +200,9 @@ select {
     transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: white;
     padding: 0 0.3em;
+    width: 60%;
 }
+
 
 /* Mueve el label hacia arriba al enfocar o escribir */
 .input:focus ~ .art,
@@ -294,7 +308,6 @@ select {
     transform: translateX(100%); /* El menú comienza fuera de la pantalla a la derecha */
     transition: transform 0.3s ease;
     text-align: center;
-    padding: ;
 }
 
 #btn-menu:checked ~ .container-menu .cont-menu {
@@ -365,3 +378,32 @@ select {
 }
 
 
+/* Contacto */
+
+.social-buttons {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em; /* Espaciado entre los botones */
+    justify-content: center; /* Centra los botones en la fila */
+    max-width: 30%;
+    border: solid #000;
+    
+}
+
+.botones_rrss img {
+    transition: transform 0.3s ease;
+    width: 70%;
+}
+
+.botones_rrss:hover img {
+    transform: scale(1.1); /* Efecto al pasar el cursor por encima */
+}
+
+.botones_rrss{
+    background-color: #FF7F50;
+    border: none;
+    margin: 0 auto;
+    display: inline-block;
+    padding: 0.9em;
+}
