@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-repeat: no-repeat;
 }
 
@@ -17,6 +17,11 @@ body {
 
 .body2 {
     background-image: url(../img/avion-blanco\ 1\(1\).png);
+}
+
+.body3{
+    background-image: url(../img/azafatasç.png);
+    background-repeat: no-repeat;
 }
 /* Cabezera */
 
@@ -62,7 +67,7 @@ nav:last-child {
 }
 
 .btn-inicio {
-    display: inline-block; /* Asegura que se comporte como un botón */
+    display: inline-block; 
     background-color: #FF7F50; 
     color: black; 
     border: none;
@@ -71,12 +76,12 @@ nav:last-child {
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    text-align: center; /* Centra el texto dentro de la etiqueta */
+    text-align: center; 
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn-inicio:hover {
-    transform: scale(1.05); /* Agrega un efecto de ampliación */
+    transform: scale(1.05); 
 }
 
 /*main*/
@@ -100,7 +105,7 @@ nav:last-child {
     justify-content: center;
     width: 100%;
     gap: 240px;
-    padding: 10% 12% 0%;
+    padding: 8% 12% 0%;
 }
 
 /*formulario viajes*/
@@ -131,9 +136,9 @@ nav:last-child {
     color: #000000;
     cursor: pointer;
     border: none;
-    font-size: 0.8em; /* Reduce el tamaño del texto */
-    padding: 1.2em ; /* Reduce el espacio interno del botón */
-    width: 8%; /* Asegura que el botón no sea demasiado ancho */
+    font-size: 0.8em;
+    padding: 1.2em ; 
+    width: 8%; 
 }
   
 .botones_masinformacion{
@@ -144,9 +149,9 @@ nav:last-child {
     color: #000000;
     cursor: pointer;
     border: none;
-    font-size: 0.8em; /* Reduce el tamaño del texto */
-    padding: 1em ; /* Reduce el espacio interno del botón */
-    width: auto; /* Asegura que el botón no sea demasiado ancho */
+    font-size: 0.8em;
+    padding: 1em ; 
+    width: auto;
 }
 
 select {
@@ -204,6 +209,7 @@ select {
     background-color: white;
     padding: 0 0.3em;
     width: 60%;
+    height: 25%;
 }
 
 .art_inicio {
@@ -220,6 +226,7 @@ select {
 }
 
 /* Mueve el label hacia arriba al enfocar o escribir */
+
 .input:focus ~ .art,
 .input:valid ~ .art {
     top: -0.6em;
@@ -234,7 +241,7 @@ select {
 
 /*sobre nosotros*/
 .titulo {   
-    padding-top: 19%;
+    padding-top: 17%;
     color: white;
 } 
 
@@ -289,6 +296,7 @@ select {
     width: 20px;  
     height: auto; 
 }
+
 /* Menú lateral */
 
 .container-menu {
@@ -309,6 +317,10 @@ select {
     visibility: visible;
 }
 
+.checkbox{
+    display: none;
+}
+
 #menuInicioSesion{
     padding: 1em;
 }
@@ -316,18 +328,18 @@ select {
 .cont-menu {
     position: fixed;
     top: 0;
-    right: 0; /* Cambio de left a right para que aparezca desde la derecha */
+    right: 0; 
     width: 80%;
     max-width: 500px;
     height: 100%;
     background: white;
-    transform: translateX(100%); /* El menú comienza fuera de la pantalla a la derecha */
+    transform: translateX(100%); 
     transition: transform 0.3s ease;
     text-align: center;
 }
 
 #btn-menu:checked ~ .container-menu .cont-menu {
-    transform: translateX(0); /* Cuando se activa, el menú se desliza desde la derecha */
+    transform: translateX(0);
 }
 
 .cont-menu nav {
@@ -372,17 +384,17 @@ select {
     color: #000000;
     cursor: pointer;
     border: none;
-    font-size: 0.8em; /* Reduce el tamaño del texto */
-    padding: 0.8em; /* Reduce el espacio interno del botón */
-    width: auto; /* Asegura que el botón no sea demasiado ancho */
+    font-size: 0.8em;
+    padding: 0.8em;
+    width: auto;
     display: block; 
     margin-left: auto;
     margin-right: auto; 
 }
 
 .texto-menu {
-    margin: 0 auto; /* Centra el elemento si tiene un ancho definido */
-    width: 80%; /* Define un ancho específico si es necesario */
+    margin: 0 auto;
+    width: 80%; 
 }
 
 .campos {
@@ -390,30 +402,33 @@ select {
     flex: 1;
     max-width: 80%;
     padding: 0.7em;
-    margin: 0 auto; /* Centra el elemento */
+    margin: 0 auto;
 }
 
 
 /* Contacto */
-
+.tituloContactos {
+    padding-top: 15%;
+    color: white;
+    font-size: 70px;
+}
 .social-buttons {
-    position: fixed;
     display: flex;
     flex-wrap: wrap;
-    gap: 1em; /* Espaciado entre los botones */
-    justify-content: center; /* Centra los botones en la fila */
-    max-width: 30%;
-    border: solid #000;
+    gap: 2em; 
+    justify-content: center;
+    max-width: 40%;
+    margin: 1em auto;
     
 }
 
 .botones_rrss img {
     transition: transform 0.3s ease;
-    width: 70%;
+    width: 90%;
 }
 
 .botones_rrss:hover img {
-    transform: scale(1.1); /* Efecto al pasar el cursor por encima */
+    transform: scale(1.1); 
 }
 
 .botones_rrss{
@@ -421,9 +436,9 @@ select {
     border: none;
     margin: 0 auto;
     display: inline-block;
-    padding: 0.9em;
+    padding: 3em;
 }
-/*vaiajes*/
+/* Viajes */
 .viajes {
     justify-content: center;
     display: flex;
