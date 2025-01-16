@@ -421,6 +421,7 @@ select {
     color: white;
     font-size: 70px;
 }
+
 .social-buttons {
     display: flex;
     flex-wrap: wrap;
@@ -451,4 +452,84 @@ select {
 .viajes {
     justify-content: center;
     display: flex;
+}
+
+/* Experiencias */
+.experiencias-centered-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.experiencias-centered-content figure {
+    margin: 0;
+}
+
+.experiencias-centered-content p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0;
+}
+
+.experiencias-footer {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.experiencias-footer .experiencias-footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.experiencias-footer .experiencias-footer-content img {
+    width: 50px;
+    height: auto;
+}
+
+.experiencias-footer p {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.experiencias-videos {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.experiencias-audio-item {
+    
+    text-align: center;
+    max-width: 300px;
+}
+
+.experiencias-audio-item p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.experiencias-videos figure {
+    margin: 0; 
+}
+
+.experiencias-reserva {
+    color: white;
+    text-align: center;
+    background-color:  #004080;
+    padding: 1%;
+    border-radius: 20px;
+    width: 50%;
+    margin: 0 auto;
 }
