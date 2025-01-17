@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/* Aquí definimos las Custom properties */
+:root {
+  --negro: #393939;
+  --blanco: #ececec;
+  --sombra-ppal: #c9c9c9;
+  --sombra-sec: #ffffff;
+  --borde-negro: #00000050;
+  --marcado: rgb(127, 195, 255);
+  /* Tipografía */
+  --tipo-principal: Helvetica, Arial, sans-serif;
+}
+
+/* Las adaptamos al modo oscuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --negro: #ececec;
+    --blanco: #303030;
+    --sombra-ppal: #242424;
+    --sombra-sec: #3c3c3c;
+    --borde-negro: #FFFFFF50;
+  }
+}
+
+.contenedor {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 120em;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em;
+  color: var(--negro);
+  transition: all 0.4s ease;
+  border-radius: 0.5em;
+  background-color: var(--blanco);
+  box-shadow: 0.3em 0.3em 0.6em var(--sombra-ppal), -0.3em -0.3em 0.6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+}
+
+.contenedor .ul {
+  justify-content: center;
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.contenedor .li {
+  padding: 1em;
+  margin: 0 2em 0 0;
+  color: var(--negro);
+  transition: all 0.4s ease;
+  border-radius: 0.5em;
+  background-color: var(--blanco);
+  box-shadow: 0.3em 0.3em 0.6em var(--sombra-ppal), -0.3em -0.3em 0.6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  cursor: pointer;
+}
+
+.contenedor .li.activo {
+  background-color: lightskyblue;
+  color: white;
+}
+
+.contenedor .subcontenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  position: relative;
+}
+
+.contenedor .bloque {
+  margin: 1em auto;
+  padding: 1em;
+  position: absolute;
+  top: 2em;
+  color: var(--negro);
+  transition: all 0.4s ease;
+  border-radius: 0.5em;
+  background-color: var(--blanco);
+  box-shadow: 0.3em 0.3em 0.6em var(--sombra-ppal), -0.3em -0.3em 0.6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  opacity: 0;
+  transform: translateY(50%);
+  transition: all 0.5s ease;
+}
+
+.contenedor .bloque.activo {
+  opacity: 1;
+  transform: translateY(0%);
+}

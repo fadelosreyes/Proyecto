@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo hacer unas Tabs con HTML, CSS y JS</title>
+    <link rel="stylesheet" href="prueba.css">
+    <script defer src="prueba.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <ul class="ul">
+            <li class="li activo">Botón 1</li>
+            <li class="li">Botón 2</li>
+            <li class="li">Botón 3</li>
+        </ul>
+
+        <div class="subcontenedor">
+            <div class="bloque activo">
+                <figure>
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/PAtu5ja1u70?si=XRupIPcG3TwBAxoa" 
+                        title="Video de ejemplo en YouTube" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </figure>
+            </div>
+            <div class="bloque">
+                <figure>
+                    <video 
+                        width="560" 
+                        height="315" 
+                        controls>
+                        <source src="video/AeroMexico Boeing 737-800 Despegando de Guadalajara.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </figure>
+            </div>
+            <div class="bloque">
+                <figure>
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/G5V4wBjR880?si=GAAZo23lBEN4l3kL" 
+                        title="Segundo video de ejemplo en YouTube" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </figure>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

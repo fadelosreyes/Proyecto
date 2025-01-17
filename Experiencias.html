@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experiencias</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <script defer src="js/app.js"></script>
 </head>
 
 <body>
@@ -31,30 +32,54 @@
     </header>
 
     <main>
-        <div>
-            <br><br><br><br><br>
-            <h3 class="experiencias-reserva">¿Quieres viajar?</h3>
-            <br>
-        </div>
-        <br><br><br>
-        <div class="experiencias-videos">
-            <figure>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/PAtu5ja1u70?si=XRupIPcG3TwBAxoa" 
-                        title="YouTube video player" frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </figure>
-            <figure>
-                <video width="560" height="315" controls>
-                    <source src="video/AeroMexico Boeing 737-800 Despegando de Guadalajara.mp4" type="video/mp4">
-                </video>
-            </figure>
-            <figure>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/G5V4wBjR880?si=GAAZo23lBEN4l3kL" 
-                        title="YouTube video player" frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </figure>
+        <div class="contenedor">
+            <ul class="ul">
+                <li class="li activo">Cancun</li>
+                <li class="li">Despegue de nuestro avion</li>
+                <li class="li">Londres</li>
+            </ul>
+    
+            <div class="subcontenedor">
+                <div class="bloque activo">
+                    <figure>
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/PAtu5ja1u70?si=XRupIPcG3TwBAxoa" 
+                            title="Video de ejemplo en YouTube" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </figure>
+                </div>
+                <div class="bloque">
+                    <figure>
+                        <video 
+                            width="560" 
+                            height="315" 
+                            controls>
+                            <source src="video/AeroMexico Boeing 737-800 Despegando de Guadalajara.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de video.
+                        </video>
+                    </figure>
+                </div>
+                <div class="bloque">
+                    <figure>
+                        <iframe 
+                            width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/G5V4wBjR880?si=GAAZo23lBEN4l3kL" 
+                            title="Segundo video de ejemplo en YouTube" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </figure>
+                </div>
+            </div>
         </div>
         <div class="experiencias-videos">
             <div class="experiencias-audio-item">

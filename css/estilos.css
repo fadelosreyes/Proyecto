@@ -19,10 +19,7 @@ body {
     background-image: url(../img/avion-blanco\ 1\(1\).png);
 }
 
-.body3{
-    background-image: url(../img/azafatasç.png);
-    background-repeat: no-repeat;
-}
+
 /* Cabezera */
 
 header {
@@ -502,6 +499,7 @@ select {
 }
 
 .experiencias-videos {
+    margin-top: 18%;
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -532,4 +530,144 @@ select {
     border-radius: 20px;
     width: 50%;
     margin: 0 auto;
+}
+
+/* ud 4 */
+
+.conteCarrousel {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.itemCarrousel {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-size: 100% 500px;
+}
+
+#itemCarrousel-1 {
+    background-image: url('../img/azafatasç.png');
+    background-repeat: no-repeat;
+}
+
+#itemCarrousel-2 {
+    background-image: url('../img/azafatas1.webp');
+    background-repeat: no-repeat;
+}
+
+#itemCarrousel-3 {
+    background-image: url('../img/azafata3.png');
+    background-repeat: no-repeat;
+}
+
+#itemCarrousel-4 {
+    background-image: url('../img/azafata4.png');
+    background-repeat: no-repeat;
+}
+
+.conteCarrouselController {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.conteCarrouselController > a {
+    text-decoration: none;
+    font-size: 3em;
+    color: grey;
+}
+
+/*tabs*/
+
+@charset "UTF-8";
+/* Aquí definimos las Custom properties */
+:root {
+  --negro: #393939;
+  --blanco: #ececec;
+  --sombra-ppal: #c9c9c9;
+  --sombra-sec: #ffffff;
+  --borde-negro: #00000050;
+  --marcado: rgb(127, 195, 255);
+  /* Tipografía */
+  --tipo-principal: Helvetica, Arial, sans-serif;
+}
+
+/* Las adaptamos al modo oscuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --negro: #ececec;
+    --blanco: #303030;
+    --sombra-ppal: #242424;
+    --sombra-sec: #3c3c3c;
+    --borde-negro: #FFFFFF50;
+  }
+}
+
+.contenedor {
+    margin: 3% auto;
+  width: 90%;
+  max-width: 120em;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em;
+  color: var(--negro);
+  transition: all 0.4s ease;
+  border-radius: 0.5em;
+  background-color: var(--blanco);
+  box-shadow: 0.3em 0.3em 0.6em var(--sombra-ppal), -0.3em -0.3em 0.6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+}
+
+.contenedor .ul {
+  justify-content: center;
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.contenedor .li {
+  padding: 1em;
+  margin: 0 2em 0 0;
+  color: var(--negro);
+  transition: all 0.4s ease;
+  border-radius: 0.5em;
+  background-color: var(--blanco);
+  box-shadow: 0.3em 0.3em 0.6em var(--sombra-ppal), -0.3em -0.3em 0.6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  cursor: pointer;
+}
+
+.contenedor .li.activo {
+  background-color: lightskyblue;
+  color: white;
+}
+
+.contenedor .subcontenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  position: relative;
+}
+
+.contenedor .bloque {
+  margin: 1em auto;
+  padding: 1em;
+  position: absolute;
+  top: 2em;
+  color: var(--negro);
+  transition: all 0.4s ease;
+  border-radius: 0.5em;
+  background-color: var(--blanco);
+  box-shadow: 0.3em 0.3em 0.6em var(--sombra-ppal), -0.3em -0.3em 0.6em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  opacity: 0;
+  transform: translateY(50%);
+  transition: all 0.5s ease;
+}
+
+.contenedor .bloque.activo {
+  opacity: 1;
+  transform: translateY(0%);
 }
